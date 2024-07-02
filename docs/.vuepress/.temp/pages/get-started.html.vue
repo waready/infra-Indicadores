@@ -59,21 +59,20 @@
 <span class="line">├── package-lock.json</span>
 <span class="line">├── package.json</span>
 <span class="line">├── public/</span>
-<span class="line">│   ├── favicon.ico</span>
-<span class="line">│   └── index.html</span>
+<span class="line">│   ├── css/</span>
+<span class="line">│   │   └── index.css</span>
+<span class="line">│   └── js/</span>
+<span class="line">│   │   └── index.js</span>
 <span class="line">├── src/</span>
-<span class="line">│   ├── App.vue</span>
-<span class="line">│   ├── assets/</span>
-<span class="line">│   │   └── logo.png</span>
-<span class="line">│   ├── components/</span>
-<span class="line">│   │   └── HelloWorld.vue</span>
+<span class="line">│   ├── authentication.js</span>
+<span class="line">│   ├── embedTokenGenerationService.js</span>
+<span class="line">│   ├── server.js</span>
 <span class="line">│   ├── main.js</span>
-<span class="line">│   └── router/</span>
-<span class="line">│       └── index.js</span>
+<span class="line">│   └── utils.js</span>
 <span class="line">└── views/</span>
-<span class="line">    └── Home.vue</span>
+<span class="line">    └── index.html</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="configuration" tabindex="-1"><a class="header-anchor" href="#configuration"><span>Configuration</span></a></h2>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="configuration" tabindex="-1"><a class="header-anchor" href="#configuration"><span>Configuration</span></a></h2>
 <p>VuePress use a <code v-pre>.vuepress/config.js</code>(or .ts) file as <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">site configuration</a>, you can use it to config your site.</p>
 <p>For <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">client side configuration</a>, you can create <code v-pre>.vuepress/client.js</code>(or .ts).</p>
 <p>Meanwhile, you can also add configuration per page with <a href="https://vuejs.press/guide/page.html#frontmatter" target="_blank" rel="noopener noreferrer">frontmatter</a>.</p>

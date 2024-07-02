@@ -76,19 +76,18 @@ observabilidad/
 ├── package-lock.json
 ├── package.json
 ├── public/
-│   ├── favicon.ico
-│   └── index.html
+│   ├── css/
+│   │   └── index.css
+│   └── js/
+│   │   └── index.js
 ├── src/
-│   ├── App.vue
-│   ├── assets/
-│   │   └── logo.png
-│   ├── components/
-│   │   └── HelloWorld.vue
+│   ├── authentication.js
+│   ├── embedTokenGenerationService.js
+│   ├── server.js
 │   ├── main.js
-│   └── router/
-│       └── index.js
+│   └── utils.js
 └── views/
-    └── Home.vue
+    └── index.html
 ```
 
 ## Configuration
