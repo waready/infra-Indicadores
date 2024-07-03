@@ -1,4 +1,4 @@
-import comp from "C:/Users/PC/Desktop/desarrollo/infra-indicadores/docs/.vuepress/.temp/pages/timeline/index.html.vue"
+import comp from "D:/Desarrollo/infra-Indicadores/docs/.vuepress/.temp/pages/timeline/index.html.vue"
 const data = JSON.parse("{\"path\":\"/timeline/\",\"title\":\"Timeline\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Timeline\",\"sidebar\":false,\"blog\":{\"type\":\"type\",\"key\":\"timeline\"},\"layout\":\"Timeline\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 
