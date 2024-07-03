@@ -11,6 +11,7 @@ const articles = useBlogType('article')
     <template #page>
       <main class="page">
         <ArticleList :items="articles.items" />
+        puta
       </main>
     </template>
   </ParentLayout>

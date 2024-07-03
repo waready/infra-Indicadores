@@ -14,24 +14,30 @@ export default defineUserConfig({
 
     navbar: [
       '/',
-      {
-        text: 'Article',
-        link: '/article/',
-      },
-      {
-        text: 'Category',
-        link: '/category/',
-      },
-      {
-        text: 'Tag',
-        link: '/tag/',
-      },
-      {
-        text: 'Timeline',
-        link: '/timeline/',
-      },
+      // {
+      //   text: 'Article',
+      //   link: '/article/',
+      // },
+      // {
+      //   text: 'Category',
+      //   link: '/category/',
+      // },
+      // {
+      //   text: 'Tag',
+      //   link: '/tag/',
+      // },
+      // {
+      //   text: 'Timeline',
+      //   link: '/timeline/',
+      // },
     ],
   }),
+
+  sidebar: {
+      title: 'Guide',
+      link: '/guide/',
+      collapsable: true,
+  },
 
   plugins: [
     blogPlugin({

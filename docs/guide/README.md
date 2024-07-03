@@ -358,9 +358,29 @@ img
 
 como se usa en componente Power by
 
+```js {2}
+  static async GetObservabilidad(){
+    //{btObservabilidad} = {process.env.VUE_APP_URL_OBSERVABILIDAD}`);
+    return (await axios.get(btObservabilidad)).data
+  }
+```
 
 ### Configuracion
 tenemos que configurar el archivo .env en caso de desarrollo
+
+``` .env
+VUE_APP_BTEXPOSER=false
+VUE_APP_API_URL=http://10.25.4.10:6021/bthibrido/servlet/
+VUE_APP_API_PREFIJO=ardwsbt
+VUE_APP_API_VERSION=v1
+VUE_APP_URL_OBSERVABILIDAD=http://10.25.4.10:5300/getEmbedToken
+VUE_APP_GMAPS_APIKEY=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg
+VUE_APP_CLIENT_SECRET=BGALs5B6K2cfLciroALX3okJO11783pNkU6v11me
+VUE_APP_LOGO_PATH=assets/logoB.png
+
+```
+
+tenemos que configurar los archivos .env y  public/config.js en caso de producción:
 
 ``` .env
 VUE_APP_BTEXPOSER=GetBTexposer
@@ -373,8 +393,6 @@ VUE_APP_CLIENT_SECRET=BGALs5B6K2cfLciroALX3okJO11783pNkU6v11me
 VUE_APP_LOGO_PATH=assets/logoB.png
 
 ```
-
-tenemos que configurar los archivos .env public/config.js en caso de producción:
 
 ```js
 window.GetBTexposer= "false"

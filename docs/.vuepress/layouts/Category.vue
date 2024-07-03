@@ -20,9 +20,9 @@ const categoryMap = useBlogCategory('category')
             :active="route.path === path"
             class="category"
           >
-            {{ name }}
+            {{ name }} puta
             <span class="category-num">
-              {{ items.length }}
+              {{ items.length }} mierda
             </span>
           </RouteLink>
         </div>

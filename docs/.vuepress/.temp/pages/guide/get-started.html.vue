@@ -1,33 +1,4 @@
-<template><div><h1 id="infraestructura-app-indicadores" tabindex="-1"><a class="header-anchor" href="#infraestructura-app-indicadores"><span>Infraestructura App Indicadores</span></a></h1>
-<p>Este proyecto utiliza <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">Node.js</a> <a href="https://nodejs.org/dist/v18.18.0/node-v18.18.0-x64.msi" target="_blank" rel="noopener noreferrer">versión 18.18.0</a> para ser desplegado tanto en las necesidades del backend y frontend. El backend está construido con <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">Express</a>, un framework web minimalista y flexible para Node.js que proporciona un conjunto robusto de características para aplicaciones web y móviles.</p>
-<p>El frontend está desarrollado con <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>, un framework progresivo para construir interfaces de usuario. Vue.js se utiliza junto con varias bibliotecas y herramientas de la ecosistema de Vue, proporcionando una experiencia de desarrollo eficiente y agradable.</p>
-<h2 id="tecnologias-utilizadas" tabindex="-1"><a class="header-anchor" href="#tecnologias-utilizadas"><span>Tecnologías Utilizadas</span></a></h2>
-<ul>
-<li><strong>Node.js</strong>: Entorno de ejecución para JavaScript en el servidor.</li>
-<li><strong>Express</strong>: Framework web para Node.js.</li>
-<li><strong>Vue.js</strong>: Framework progresivo para la construcción de interfaces de usuario.</li>
-<li><strong>JavaScript</strong>: Lenguaje de programación principal utilizado tanto en el backend como en el frontend.</li>
-</ul>
-<h2 id="requisitos" tabindex="-1"><a class="header-anchor" href="#requisitos"><span>Requisitos</span></a></h2>
-<p>Asegúrate de tener instalados los siguientes requisitos antes de comenzar con el desarrollo:</p>
-<ul>
-<li><a href="https://nodejs.org/dist/v18.18.0/node-v18.18.0-x64.msi" target="_blank" rel="noopener noreferrer">Node.js 18.18.0</a></li>
-<li><a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">NPM</a> (incluido con la instalación de Node.js)</li>
-</ul>
-<h2 id="instalacion" tabindex="-1"><a class="header-anchor" href="#instalacion"><span>Instalación</span></a></h2>
-<ol>
-<li>
-<p><strong>Clona el repositorio Observabilidad (powerby)</strong>:</p>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre class="language-bash"><code><span class="line"> <span class="token function">git</span> clone https://github.com/waready/observabilidad.git</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
-<li>
-<p><strong>Clona el repositorio App Indicadores</strong>:</p>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre class="language-bash"><code><span class="line"> <span class="token function">git</span> clone https://github.com/waready/agrupadores-vue.git</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
-</ol>
-<h2 id="observabilidad" tabindex="-1"><a class="header-anchor" href="#observabilidad"><span>Observabilidad</span></a></h2>
+<template><div><h1 id="observabilidad" tabindex="-1"><a class="header-anchor" href="#observabilidad"><span>Observabilidad</span></a></h1>
 <p>Este proyecto utiliza Node.js para obtener detalles de configuración de embebido desde un endpoint específico.</p>
 <p><strong>Componentes Clave:</strong></p>
 <ul>
