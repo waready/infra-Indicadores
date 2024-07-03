@@ -114,7 +114,21 @@ observabilidad/
 configurar con nuestras credenciales para generar `/getEmbedToken` el archivo  `config.json` 
 
 ::: tip ejemplo
-  code
+  ```json
+{
+    "authenticationMode": "ServicePrincipal",
+    "authorityUri": "https://login.microsoftonline.com/0bea86de-02f7-425e-9986-9da79de9ab64",
+    "scope": "https://analysis.windows.net/powerbi/api",
+    "apiUrl": "https://api.powerbi.com/",
+    "clientId": "clientId",
+    "workspaceId": "workspaceId",
+    "reportId": "reportId",
+    "pbiUsername": "",
+    "pbiPassword": "",
+    "clientSecret": "clientSecret",
+    "tenantId": "tenantId"
+}
+```
 :::
 
 ### Code generateEmbedToken
@@ -205,12 +219,18 @@ Este levantara el Proyecto Observabilidad para verificar si esta corriendo entra
   http://<IP>:5300/getEmbedToken
 ```
 
-img
+
+
+<img :src="$withBase('/images/Screenshot_1.png')" alt="VuePress Logo">
+
+<img :src="$withBase('/images/Screenshot_2.png')" alt="VuePress Logo">
+
+
 
 
 ## App Indicadores
 
-El App de Indicadores es una aplicación frontend desarrollada con [Vue.js](https://vuejs.org/), diseñada para mostrar y gestionar indicadores clave de rendimiento (KPIs). Esta aplicación proporciona una interfaz intuitiva y dinámica para visualizar datos importantes de forma clara y accesible.
+El App de Indicadores es una aplicación frontend desarrollada con [Vue.js](https://vuejs.org/), diseñada para mostrar y gestionar indicadores. Esta aplicación proporciona una interfaz intuitiva y dinámica para visualizar datos importantes de forma clara y accesible.
 
 Componentes Clave:
 
@@ -352,11 +372,17 @@ const btServicesEnabled = btServicesEnv === "true";
   }
 ```
 
-Pioneros:
-img 
+Ambiente Bantotal:
+
+<img :src="$withBase('/images/1.png')" alt="VuePress Logo">
+
+Soap UI:
+
+<img :src="$withBase('/images/2.png')" alt="VuePress Logo">
 
 
-como se usa en componente Power by
+
+Configuracion y ejecucion del componete con comunicacion con Observabilidad Power BY
 
 ```js {2}
   static async GetObservabilidad(){
@@ -366,7 +392,7 @@ como se usa en componente Power by
 ```
 
 ### Configuracion
-tenemos que configurar el archivo .env en caso de desarrollo
+tenemos que configurar el archivo `.env` en caso de desarrollo con las direcciones del ambiente Bantotal que Usaremos
 
 ``` .env
 VUE_APP_BTEXPOSER=false
@@ -380,7 +406,7 @@ VUE_APP_LOGO_PATH=assets/logoB.png
 
 ```
 
-tenemos que configurar los archivos .env y  public/config.js en caso de producción:
+tenemos que configurar los archivos `.env` y  `public/config.js` en caso de producción:
 
 ``` .env
 VUE_APP_BTEXPOSER=GetBTexposer
@@ -426,20 +452,11 @@ Para ejecutarlo necesitamos previamente configurar del proyecto en los archivos 
     npm run serve
    ```
 
+<img :src="$withBase('/images/Screenshot_3.png')" alt="VuePress Logo">
+
 
 ### Compilar
-
 
    ```sh
     npm run build
    ```
-
-config
-
-### Desplegar App
-
-cambiar js
-
-copiar archivos con nombre I caperta
-
-probar 

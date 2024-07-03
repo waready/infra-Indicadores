@@ -6,11 +6,14 @@ import { viteBundler } from '@vuepress/bundler-vite'
 export default defineUserConfig({
   lang: 'en-US',
 
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: 'Estructura App Indicadores',
+  description: 'Despliegue de Observabilidad y Indicadores',
+  base:"/infra-Indicadores/",
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: "https://www.bantotal.com/wp-content/uploads/2017/11/nuevo-logo-web_Mesa-de-trabajo-1.png",
+    logoDark: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbk6SWIZG-vZwChOqy3IKpBPj-VuxQASgbQ&s",
+    favicon: "https://www.bantotal.com/wp-content/uploads/2017/11/cropped-Icono-flecha-web_Mesa-de-trabajo-1-32x32.png",
 
     navbar: [
       '/',

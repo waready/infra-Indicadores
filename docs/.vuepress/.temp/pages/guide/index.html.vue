@@ -96,8 +96,21 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="configuration" tabindex="-1"><a class="header-anchor" href="#configuration"><span>Configuration</span></a></h3>
 <p>configurar con nuestras credenciales para generar <code v-pre>/getEmbedToken</code> el archivo  <code v-pre>config.json</code></p>
 <div class="custom-container tip"><p class="custom-container-title">ejemplo</p>
-<p>code</p>
-</div>
+<div class="language-json line-numbers-mode" data-highlighter="prismjs" data-ext="json" data-title="json"><pre v-pre class="language-json"><code><span class="line"><span class="token punctuation">{</span></span>
+<span class="line">  <span class="token property">"authenticationMode"</span><span class="token operator">:</span> <span class="token string">"ServicePrincipal"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"authorityUri"</span><span class="token operator">:</span> <span class="token string">"https://login.microsoftonline.com/0bea86de-02f7-425e-9986-9da79de9ab64"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"scope"</span><span class="token operator">:</span> <span class="token string">"https://analysis.windows.net/powerbi/api"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"apiUrl"</span><span class="token operator">:</span> <span class="token string">"https://api.powerbi.com/"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"clientId"</span><span class="token operator">:</span> <span class="token string">"clientId"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"workspaceId"</span><span class="token operator">:</span> <span class="token string">"workspaceId"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"reportId"</span><span class="token operator">:</span> <span class="token string">"reportId"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"pbiUsername"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"pbiPassword"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"clientSecret"</span><span class="token operator">:</span> <span class="token string">"clientSecret"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"tenantId"</span><span class="token operator">:</span> <span class="token string">"tenantId"</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>
 <h3 id="code-generateembedtoken" tabindex="-1"><a class="header-anchor" href="#code-generateembedtoken"><span>Code generateEmbedToken</span></a></h3>
 <p>Para anilizar la función generateEmbedToken ingresamos a la carpeta <code v-pre>scr/embedTokenGenerationService.js</code> nos devolvera los siguientes datos que son necesario para relizar el embed de los reporte de <code v-pre>powerby</code></p>
 <ul>
@@ -176,9 +189,10 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>Este levantara el Proyecto Observabilidad para verificar si esta corriendo entramos a la siguiente dirección <code v-pre>IP</code> servidor , <code v-pre>:5300</code> puerto.</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre class="language-bash"><code><span class="line">  http://<span class="token operator">&lt;</span>IP<span class="token operator">></span>:5300/getEmbedToken</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>img</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><img :src="$withBase('/images/Screenshot_1.png')" alt="VuePress Logo">
+<img :src="$withBase('/images/Screenshot_2.png')" alt="VuePress Logo">
 <h2 id="app-indicadores" tabindex="-1"><a class="header-anchor" href="#app-indicadores"><span>App Indicadores</span></a></h2>
-<p>El App de Indicadores es una aplicación frontend desarrollada con <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>, diseñada para mostrar y gestionar indicadores clave de rendimiento (KPIs). Esta aplicación proporciona una interfaz intuitiva y dinámica para visualizar datos importantes de forma clara y accesible.</p>
+<p>El App de Indicadores es una aplicación frontend desarrollada con <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>, diseñada para mostrar y gestionar indicadores. Esta aplicación proporciona una interfaz intuitiva y dinámica para visualizar datos importantes de forma clara y accesible.</p>
 <p>Componentes Clave:</p>
 <ul>
 <li><strong>Componentes Vue</strong>: Componentes modulares para diferentes partes de la interfaz de usuario.</li>
@@ -308,16 +322,18 @@
 <span class="line">    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">postRequest</span><span class="token punctuation">(</span>endpoint<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">  <span class="token punctuation">}</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Pioneros:
-img</p>
-<p>como se usa en componente Power by</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Ambiente Bantotal:</p>
+<img :src="$withBase('/images/1.png')" alt="VuePress Logo">
+<p>Soap UI:</p>
+<img :src="$withBase('/images/2.png')" alt="VuePress Logo">
+<p>Configuracion y ejecucion del componete con comunicacion con Observabilidad Power BY</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="line">  <span class="token keyword">static</span> <span class="token keyword">async</span> <span class="token function">GetObservabilidad</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
 <span class="line highlighted">    <span class="token comment">//{btObservabilidad} = {process.env.VUE_APP_URL_OBSERVABILIDAD}`);</span></span>
 <span class="line">    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>btObservabilidad<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>data</span>
 <span class="line">  <span class="token punctuation">}</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="configuracion" tabindex="-1"><a class="header-anchor" href="#configuracion"><span>Configuracion</span></a></h3>
-<p>tenemos que configurar el archivo .env en caso de desarrollo</p>
+<p>tenemos que configurar el archivo <code v-pre>.env</code> en caso de desarrollo con las direcciones del ambiente Bantotal que Usaremos</p>
 <div class="language-.env line-numbers-mode" data-highlighter="prismjs" data-ext=".env" data-title=".env"><pre v-pre class="language-.env"><code><span class="line">VUE_APP_BTEXPOSER=false</span>
 <span class="line">VUE_APP_API_URL=http://10.25.4.10:6021/bthibrido/servlet/</span>
 <span class="line">VUE_APP_API_PREFIJO=ardwsbt</span>
@@ -328,7 +344,7 @@ img</p>
 <span class="line">VUE_APP_LOGO_PATH=assets/logoB.png</span>
 <span class="line"></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>tenemos que configurar los archivos .env y  public/config.js en caso de producción:</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>tenemos que configurar los archivos <code v-pre>.env</code> y  <code v-pre>public/config.js</code> en caso de producción:</p>
 <div class="language-.env line-numbers-mode" data-highlighter="prismjs" data-ext=".env" data-title=".env"><pre v-pre class="language-.env"><code><span class="line">VUE_APP_BTEXPOSER=GetBTexposer</span>
 <span class="line">VUE_APP_API_URL=GetUrlPro</span>
 <span class="line">VUE_APP_API_PREFIJO=GetSufijo</span>
@@ -363,14 +379,10 @@ img</p>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre class="language-bash"><code><span class="line"> <span class="token function">npm</span> run serve</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="compilar" tabindex="-1"><a class="header-anchor" href="#compilar"><span>Compilar</span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><img :src="$withBase('/images/Screenshot_3.png')" alt="VuePress Logo">
+<h3 id="compilar" tabindex="-1"><a class="header-anchor" href="#compilar"><span>Compilar</span></a></h3>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre class="language-bash"><code><span class="line"> <span class="token function">npm</span> run build</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>config</p>
-<h3 id="desplegar-app" tabindex="-1"><a class="header-anchor" href="#desplegar-app"><span>Desplegar App</span></a></h3>
-<p>cambiar js</p>
-<p>copiar archivos con nombre I caperta</p>
-<p>probar</p>
-</div></template>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></div></template>
 
 
